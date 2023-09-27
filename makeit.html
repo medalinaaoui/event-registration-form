@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="registration form for attendees">
+    <meta name="keywords" content="event,registration, attendees">
+    <meta name="author" content="Mohamed Ali Naaoui">
+    <link rel="stylesheet" href="sss.css">
+    <title>Event registration form</title>
+</head>
+<body>
+<header>
+    <h1 id="title">Event registration form</h1>
+    <p id="description">We appreciate your time and effort in assisting us with the efficient organization of this event.</p>
+</header>
+<main>
+    <form id="survey-form">
+        <div class="name">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" required placeholder="Enter your name">
+        </div>
+
+        <div class="email">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" required placeholder="Enter a valid email">
+        </div>
+
+        <div class="age">
+            <label for="age" id="age-label">Age</label>
+            <input type="number" id="age" value="18" min="18" max="130" required>
+        </div>
+
+        <div class="Organization-Company">
+            <label for="Organization-Company">Organization/Company (if applicable)</label>
+            <input type="text" id="Organization-Company">
+        </div>
+
+        <div class="Dietary Restrictions">
+            <label for="Dietary-Restrictions">Dietary Restrictions</label>
+            <select id="dropdown">
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Gluten-Free">Gluten-Free</option>
+            </select>
+        </div>
+
+        <div class="T-shirt Size">
+            <label class="the-radio">
+                <span>Select your T-shirt Size:</span>
+                
+                <label>
+                    <input type="radio" name="T-shirt Size" value="XL">
+                    XL
+                </label>
+                <label>
+                    <input type="radio" name="T-shirt Size" value="L">
+                    L
+                </label>
+                <label>
+                    <input type="radio" name="T-shirt Size" value="M">
+                    M
+                </label>
+            </label>
+            
+        </div>
+
+        <div class="hear-this">
+            <label class="the-check">
+                <span>How did you hear about this event?</span>
+                <label>
+                    <input type="checkbox" class="checkbox" value="Social Media">
+                    Social Media
+                </label>
+                <label>
+                    <input type="checkbox" class="checkbox" value="Word of Mouth">
+                    Word of Mouth
+                </label>
+                <label>
+                    <input type="checkbox" class="checkbox" value="Website">
+                    Website
+                </label>
+            </label>
+            
+        </div>
+
+        <div class="topics-questions">
+            <label for="name" id="name-label">Any specific topics/questions you would like to be addressed at the event?</label>
+            <textarea id="topics-questions" name="topics-questions" rows="4" cols="50" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+       <button id="submit">Submit</button>
+       
+
+    </form>
+</main>
+<footer></footer>
+</body>
+</html>
